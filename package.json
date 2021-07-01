@@ -1,0 +1,22 @@
+{
+  "name": "trip-app",
+  "version": "1.0.0",
+  "description": "Trip budget calculating app",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.html"
+  },
+  "author": "Naveen Bishnoi",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

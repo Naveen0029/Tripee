@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="C:\Users\ASUS\Desktop\coursera\bootstrap4\conFusion\styles.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Trip Spent Analysis</title>
+</head>
+
+<body>
+    <div class="container" id="main_container">
+        <div class="container" id="name_container">
+            <div class="row justify-content-center" id="input_details">
+                <div class="col-12 col-sm-3">
+                    <input type="text" id="entered_details" class="form-control"
+                        placeholder="Enter names of the people">
+                </div>
+                <div class="col-2 col-sm-2">
+                    <button class="btn btn-primary" type="submit" id="get_details_button1">Add</button>
+                </div>
+
+            </div>
+            <div class="row justify-content-center" id="print_names">
+                <div class="col-4 col-sm-3">
+                    <h4 id="name-1">Naveen</h4>
+                    <h4 id="name-1">Ravi</h4>
+                    <h4 id="name-1">Sahil</h4>
+                    <button class="btn btn-primary" type="submit" id="submit_details">submit</button>
+                </div>
+               
+            </div>
+            
+        </div>
+    
+
+        <div class="container" style="background-color: blanchedalmond;display: block;" id="who_pay">
+            <h2 style="text-align: center;">Transactions Details</h2><br>
+
+            <div class="row" id="detail_heading">
+                <div class="col-3 col-sm-3">
+                    <h3>Payer</h3>
+                </div>
+                <div class="col-3 col-sm-3">
+                    <h3>Payee</h3>
+                </div>
+                <div class="col-3 col-sm-3">
+                    <h3>Amount</h3>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <h3 style="text-align: center;">Add</h3>
+                </div>
+
+            </div>
+            <div class="row" id="print_details">
+                 <div class="col-3 col-sm-3">
+                     <p id="payee">Naveen</p>
+                 </div>
+                 <div class="col-3 col-sm-3">
+                    <p id="payer">Kartik</p>
+                </div>
+                <div class="col-3 col-sm-3">
+                    <p id="amount_detail">1000</p>
+                </div>
+                <div class="col-3 col-sm-3">
+                    <p></p>
+                </div>
+            </div>
+            <div class="row" id="choose_people">
+                <div class="col-3 col-sm-3" class="dropdown1">
+                    <select class="form-select" id="inlineFormSelectPref1">
+                        <option selected>payer</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-3 col-sm-3" class="dropdown2">
+                    <select class="form-select" id="inlineFormSelectPref2">
+                        <option selected>payee</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-3 col-sm-3">
+                    <div class="amount">
+                        <input type="text" id="added_amount">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3" style="text-align: center;" class="main_button">
+                    <button class="btn btn-primary" type="submit" id="get_details_button2">Add</button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="container" style="background-color: blanchedalmond;display: block;" id="simplified_details">
+            <h2 style="text-align: center;">Simplified Details</h2><br>
+
+            <div class="row" id="simply_detail_heading">
+                <div class="col-3 col-sm-3">
+                    <h3>Payer</h3>
+                </div>
+                <div class="col-3 col-sm-3">
+                    <h3>Payee</h3>
+                </div>
+                <div class="col-3 col-sm-3">
+                    <h3>Amount</h3>
+                </div>
+            </div>
+            <div class="row" id="simply_print_details">
+                 <div class="col-3 col-sm-3">
+                     <p id="simply_payee">Naveen</p>
+                 </div>
+                 <div class="col-3 col-sm-3">
+                    <p id="simply_payer">Kartik</p>
+                </div>
+                <div class="col-3 col-sm-3">
+                    <p id="simply_amount_detail">1000</p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
+

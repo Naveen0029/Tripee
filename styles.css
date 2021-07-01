@@ -1,0 +1,30 @@
+body{
+    background-color: lightblue;
+    margin:50px;
+}
+#print_names{
+    margin:50px;
+}
+
+#added_amount{  /*setting the size of input box*/
+    width:100px;
+    height: 25px;
+    margin-top:14px;
+}
+#who_pay{
+    padding: 5px;
+}
+#get_details_button2{
+    margin-top:5px;
+}
+#inlineFormSelectPref2,#inlineFormSelectPref1{
+    
+    margin-top:15px;
+    
+}
+#entered_details{
+    margin-bottom:4px;
+}
+#simplified_details{
+    margin-top:60px;
+}
