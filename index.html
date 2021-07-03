@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="C:\Users\ASUS\Desktop\coursera\bootstrap4\conFusion\styles.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="./styles.css">
@@ -27,11 +26,9 @@
 
             </div>
             <div class="row justify-content-center" id="print_names">
-                <div class="col-4 col-sm-3">
-                    <h4 id="name-1">Naveen</h4>
-                    <h4 id="name-1">Ravi</h4>
-                    <h4 id="name-1">Sahil</h4>
-                    <button class="btn btn-primary" type="submit" id="submit_details">submit</button>
+                <div class="col-4 col-sm-4" id="add_name">
+                   <!--<h4 id="name-1">Naveen</h4>  --> 
+                    <button class="btn btn-primary" style="display: none;" type="submit" id="submit_details">submit</button>
                 </div>
                
             </div>
@@ -58,14 +55,14 @@
 
             </div>
             <div class="row" id="print_details">
-                 <div class="col-3 col-sm-3">
-                     <p id="payee">Naveen</p>
+                 <div class="col-3 col-sm-3" id="payer__name">
+                    <!-- <p >Naveen</p> --> 
                  </div>
-                 <div class="col-3 col-sm-3">
-                    <p id="payer">Kartik</p>
+                 <div class="col-3 col-sm-3" id="payee__name">
+                    <!-- <p>Kartik</p> -->
                 </div>
-                <div class="col-3 col-sm-3">
-                    <p id="amount_detail">1000</p>
+                <div class="col-3 col-sm-3" id="amount__detail">
+                   <!-- <p>Amount</p>-->
                 </div>
                 <div class="col-3 col-sm-3">
                     <p></p>
@@ -74,18 +71,14 @@
             <div class="row" id="choose_people">
                 <div class="col-3 col-sm-3" class="dropdown1">
                     <select class="form-select" id="inlineFormSelectPref1">
-                        <option selected>payer</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option selected id="payerr">payer</option>
+                       <!-- <option value="1" id="payerr_1">Naveen</option>-->
                     </select>
                 </div>
                 <div class="col-3 col-sm-3" class="dropdown2">
                     <select class="form-select" id="inlineFormSelectPref2">
-                        <option selected>payee</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option selected id="payeee">payee</option>
+                        <!-- <option value="1" id="payeee_1">Naveen</option>-->
                     </select>
                 </div>
                 <div class="col-3 col-sm-3">
