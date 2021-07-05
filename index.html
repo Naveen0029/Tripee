@@ -13,6 +13,14 @@
 </head>
 
 <body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-3 col-sm-3"><h1>Tripee</h1></div>
+            </div>
+        </div>
+    </header>
     <div class="container" id="main_container">
         <div class="container" id="name_container">
             <div class="row justify-content-center" id="input_details">
@@ -36,7 +44,7 @@
         </div>
     
 
-        <div class="container" style="background-color: blanchedalmond;display: block;" id="who_pay">
+        <div class="container" style="background-color: blanchedalmond;display: none;" id="who_pay">
             <h2 style="text-align: center;">Transactions Details</h2><br>
 
             <div class="row" id="detail_heading">
@@ -83,7 +91,7 @@
                 </div>
                 <div class="col-3 col-sm-3">
                     <div class="amount">
-                        <input type="text" id="added_amount">
+                        <input type="number" id="added_amount">
                     </div>
                 </div>
                 <div class="col-12 col-sm-3" style="text-align: center;" class="main_button">
@@ -91,13 +99,16 @@
                 </div>
 
             </div>
-
-
-
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-3">
+                    <button class="btn btn-primary" type="submit" id="simply_details_button">Simplify It</button>
+                </div>
+                
+            </div>
         </div>
 
-
-        <div class="container" style="background-color: blanchedalmond;display: block;" id="simplified_details">
+         
+        <div class="container" style="background-color: blanchedalmond;display: none;" id="simplified_details">
             <h2 style="text-align: center;">Simplified Details</h2><br>
 
             <div class="row" id="simply_detail_heading">
@@ -112,26 +123,34 @@
                 </div>
             </div>
             <div class="row" id="simply_print_details">
-                 <div class="col-3 col-sm-3">
-                     <p id="simply_payee">Naveen</p>
+                 <div class="col-3 col-sm-3"  id="simply_payer">
+                    <!--  <p>Naveen</p>  --> 
                  </div>
-                 <div class="col-3 col-sm-3">
-                    <p id="simply_payer">Kartik</p>
+                 <div class="col-3 col-sm-3" id="simply_payee">
+                   <!-- <p >Kartik</p> --> 
                 </div>
-                <div class="col-3 col-sm-3">
-                    <p id="simply_amount_detail">1000</p>
+                <div class="col-3 col-sm-3" id="simply_amount_detail">
+                   <!-- <p >1000</p>  --> 
                 </div>
                 
             </div>
         </div>
         
     </div>
-
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-4"><p>
+                    Copyright &copy 2021 <br> by Naveen Bishnoi</p></div>
+            </div>
+        </div>
+    </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./index.js"></script>
+
 </body>
 
 </html>

@@ -1,6 +1,27 @@
+
 body{
-    background-color: lightblue;
+    background-color:lightblue;
     margin:50px;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+  
+}
+.header{
+    margin-top: -50px;
+    margin-left: -50px;
+    margin-right:-50px;
+    margin-bottom: 40px;
+    background: #9575cd;
+    color:floralwhite;
+}
+.footer{
+    margin-top:550px;
+    margin-left: -50px;
+    margin-right:-50px;
+  background-color:#9575cd;
+  color: white;
+  text-align: center;
 }
 #print_names{
     margin:50px;
